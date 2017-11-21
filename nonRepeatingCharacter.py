@@ -11,8 +11,3 @@ def first_non_repeating_char(str):
 
 print first_non_repeating_char("oohay")
 print first_non_repeating_char("abccba")
-# print first_non_repeating_char("rashmee")
-# print first_non_repeating_char("abac")
-# print first_non_repeating_char("hygull")
-# print first_non_repeating_char("abcabdcbdefg")
-# print first_non_repeating_char("abccba")

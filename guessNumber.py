@@ -12,6 +12,35 @@
 
 from random import randint
 
-_randomNum_ = randint(1, 100)
+guessesTaken = 0
 
-print _randomNum_
+print("Hi! What is your name?")
+myName = input()
+
+_randNum_ = randint(1, 10)
+
+print('Hi, ' + myName + ', I am ready with my number. Your turn!')
+
+while guessesTaken<5:
+    print("Guess?")
+    theGuess = input()
+    theGuess = int(theGuess)
+
+    guessesTaken = guessesTaken+1
+
+    if theGuess < _randNum_:
+        print('Your guess is too low!')
+    elif theGuess > _randNum_:
+        print('Your guess it too high!')
+    else:
+        break
+
+if theGuess == _randNum_:
+    guessesTaken = str(guessesTaken)
+    print('Awesome! ' + myName + '! You guessed my number in ' + guessesTaken + ' guesses!')
+
+if theGuess != _randNum_:
+    _randNum_ = str(_randNum_)
+    print('Nope! The number I was thinking of was ' + _randNum_)
+
+
